@@ -26,7 +26,6 @@ def timer(func):
 @timer
 # способ 1
 def print_repeat_digit(n: int) -> None:
-    pass
     for i in range(n+1):
         print(str(i) * i, end="--\n\n\n")
 
@@ -41,7 +40,7 @@ def print_repeat_digit2(n: int) -> None:
 if __name__ == '__main__':
     funcs = [print_repeat_digit, print_repeat_digit2]
 
-    for i in range(0, 1000, 100):
+    for i in range(0, 3000, 100):
         for func in funcs:
             func(i)
 
